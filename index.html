@@ -50,9 +50,11 @@
                         <h3>Bannière</h3>
                         <div class="price-sub">À partir de</div>
                         <div class="price-tag">2.5€</div>
+                        <button class="flip-btn" onclick="flipCard(this)">Voir l'aperçu</button>
                     </div>
                     <div class="card-back">
                         <img src="assets/previews/banniere.webp" alt="Aperçu des bannières">
+                        <button class="flip-btn" onclick="flipCard(this)">Retour au prix</button>
                     </div>
                 </div>
             </div>
@@ -62,11 +64,14 @@
                         <h3>Miniature</h3>
                         <div class="price-sub">À partir de</div>
                         <div class="price-tag">2.5€</div>
+                        <button class="flip-btn" onclick="flipCard(this)">Voir l'aperçu</button>
                     </div>
                     <div class="card-back">
                         <img src="assets/previews/minia.webp" alt="Aperçu des miniatures">
+                        <button class="flip-btn" onclick="flipCard(this)">Retour au prix</button>
                     </div>
                 </div>
+
             </div>
             <div class="card-container">
                 <div class="card">
@@ -74,9 +79,11 @@
                         <h3>Photo de profil</h3>
                         <div class="price-sub">À partir de</div>
                         <div class="price-tag">0.3€</div>
+                        <button class="flip-btn" onclick="flipCard(this)">Voir l'aperçu</button>
                     </div>
                     <div class="card-back">
                         <img src="assets/previews/pfp.webp" alt="Aperçu des photos de profil">
+                        <button class="flip-btn" onclick="flipCard(this)">Retour au prix</button>
                     </div>
                 </div>
             </div>
@@ -88,7 +95,10 @@
                 <li>J’accepte la demande/je fait ta commande</li>
                 <li>Après avoir fini je t’envoie La commande mais avec un watermark</li>
                 <li><strong>Si t’accepte :</strong> Tu payes et je t’envoie</li>
-                <li><strong>Si t’accepte pas :</strong> Aucun payement effectuer et je ne t’envoie pas la commande (tu peut proposer d’autre demande stv en gros faire une autres commande)</li>
+                <li class="step-neg">
+                    <strong>Si t’acceptes pas :</strong> 
+                    <span>Aucun payement effectuer et je ne t’envoie pas la commande (tu peut proposer d’autre demande si tu veux en gros faire d'autres commande)</span>
+                </li>
             </ul>
         </div>
         <div class="info-box warning">
