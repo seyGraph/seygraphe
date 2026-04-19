@@ -18,4 +18,14 @@ function createStars() {
     }
 }
 
+function flipCard(button) {
+    const card = button.closest('.card');
+    
+    if (card.style.transform === 'rotateY(180deg)') {
+        card.style.transform = 'rotateY(0deg)';
+    } else {
+        card.style.transform = 'rotateY(180deg)';
+    }
+}
+
 window.onload = () => createStars();
