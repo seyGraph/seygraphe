@@ -204,8 +204,20 @@ section.active {
     cursor: pointer;
 }
 
-.card-container:hover .card {
-    transform: rotateY(180deg);
+.flip-btn {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background: transparent;
+    border: 1px solid var(--primary-rose);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.flip-btn:hover {
+    background: var(--primary-rose);
 }
 
 .card-front, .card-back {
@@ -302,6 +314,21 @@ section.active {
     content: "→";
     margin-right: 10px;
     color: var(--primary-rose);
+}
+
+.step-list .step-neg {
+    align-items: flex-start;
+}
+
+.step-neg strong {
+    min-width: 140px;
+    display: inline-block;
+    color: white;
+}
+
+.step-neg span {
+    flex: 1;
+    line-height: 1.4;
 }
 
 .contact-container {
